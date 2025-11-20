@@ -9,6 +9,7 @@
 
 int main() {
     printf("Desafio Super Trunfo!\n");
+// Área para definição das variáveis para armazenar as propriedades das cidades
 
     // Declaração das variáveis para a Carta 1
     char estado1;
@@ -17,8 +18,8 @@ int main() {
     unsigned long int populacao1;
     float area1;
     float pib1;
-    float densidadepopulacional1;
-    float pibpercapta1;
+    float densidadepopulacional1; //iremos dividir população por area
+    float pibpercapta1; //iremos dividir o PIB da cidade pela população
     int pontosTuristicos1;
     float superpoder1;
 
@@ -29,14 +30,14 @@ int main() {
     unsigned long int populacao2;
     float area2;
     float pib2;
-    float densidadepopulacional2;
-    float pibpercapta2;
+    float densidadepopulacional2;//iremos dividir população por area
+    float pibpercapta2; //iremos dividir o PIB da cidade pela população
     int pontosTuristicos2;
     float superpoder2;
 
     printf("****************super trunfo****************\n\n");
 
-    // Entrada da Carta 1
+    //Entrada de dados da Carta 1
     printf("Cadastro da Carta 1\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado1);
@@ -45,7 +46,7 @@ int main() {
     scanf("%s", codigo1);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", nomeCidade1); 
+    scanf(" %[^\n]", nomeCidade1); // Lê até o ENTER (permite espaços no nome)
 
     printf("Digite a populacao: ");
     scanf("%lu", &populacao1);
@@ -71,7 +72,7 @@ int main() {
                   (1.0f / densidadepopulacional1);
 
 
-    // Entrada da Carta 2
+    //Entrada de dados da Carta 2
     printf("\nCadastro da Carta 2\n");
     printf("Digite o estado (A-H): ");
     scanf(" %c", &estado2);
@@ -80,7 +81,7 @@ int main() {
     scanf("%s", codigo2);
 
     printf("Digite o nome da cidade: ");
-    scanf(" %[^\n]", nomeCidade2); 
+    scanf(" %[^\n]", nomeCidade2); // Lê até o ENTER (permite espaços no nome)
 
     printf("Digite a populacao: ");
     scanf("%lu", &populacao2);
